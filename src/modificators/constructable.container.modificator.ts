@@ -10,9 +10,7 @@ export class ConstructableContainerModificator extends AbstractContainerModifica
     factory,
   }: {
     key: string;
-    classConstructor?: {new: () => {}};
+    classConstructor?: { new: () => {} };
     factory?: Function;
-  }) {
-    
-  }
+  }) {}
 }

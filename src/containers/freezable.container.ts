@@ -1,10 +1,10 @@
 import { ContainerInterface } from '../interfaces/container.interface';
 import { AbstractContainer } from './abstract.container';
-import { ConfigurableContainerInterface } from '../interfaces/configurable-container.interface copy';
+import { ConfigurableContainerInterface } from '../interfaces/configurable-container.interface';
 import { ModifiableContainerInterface } from '../interfaces/modifiable-container.interface';
 import { FreezableContainerModificator } from '../modificators/freezable.container.modificator';
 
-export class Container extends AbstractContainer
+export class FreezableContainer extends AbstractContainer
   implements
     ModifiableContainerInterface,
     ConfigurableContainerInterface,

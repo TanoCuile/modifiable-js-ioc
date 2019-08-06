@@ -1,6 +1,6 @@
 import { ModifiableContainerInterface } from '../interfaces/modifiable-container.interface';
 import { ContainerModificatorInterface } from '../interfaces/container.modificator.interface';
-import { ConfigurableContainerInterface } from '../interfaces/configurable-container.interface copy';
+import { ConfigurableContainerInterface } from '../interfaces/configurable-container.interface';
 import { ContainerInterface } from '../interfaces/container.interface';
 
 export abstract class AbstractContainer
