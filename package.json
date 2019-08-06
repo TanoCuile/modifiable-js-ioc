@@ -1,0 +1,39 @@
+{
+  "name": "universal-ioc",
+  "version": "1.0.0",
+  "description": "Universal IoC module for JavaScript and TypeScript, backend and frontend.",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**/*.spec.ts"
+  },
+  "keywords": [
+    "ioc",
+    "javascript",
+    "nodejs",
+    "madular",
+    "architecture"
+  ],
+  "author": "strifinder@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "chai": "^4.2.0",
+    "gts": "^1.0.0",
+    "husky": "^3.0.2",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  }
+}
