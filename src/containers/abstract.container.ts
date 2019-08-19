@@ -17,6 +17,7 @@ export abstract class AbstractContainer
   addModificator(
     modificator: ContainerModificatorInterface
   ): ModifiableContainerInterface {
+    modificator.applyModifier(this);
     this.modificators.push(modificator);
     return this;
   }
