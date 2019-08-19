@@ -7,4 +7,10 @@ export class Container extends AbstractContainer
   implements
     ModifiableContainerInterface,
     ConfigurableContainerInterface,
-    ContainerInterface {}
+    ContainerInterface {
+  setBatchDependencies(dependencies: { [key: string]: any }) {
+    Object.keys(dependencies).forEach((dependencyName) =>
+      this.set({ key: dependencyName, value: dependencies[dependencyName] })
+    );
+  }
+}
