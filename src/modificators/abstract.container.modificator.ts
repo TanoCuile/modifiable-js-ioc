@@ -15,5 +15,5 @@ export class AbstractContainerModificator
     return false;
   }
 
-  set(serviceConfiguration: { key: string; value: any }) {}
+  set(serviceConfiguration: { key: string; }) {}
 }

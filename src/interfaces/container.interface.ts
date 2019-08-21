@@ -19,5 +19,5 @@ export interface ContainerInterface {
    * @param {string} serviceInfo.key Name of element in container
    * @param {any} serviceInfo.value Value of elements
    */
-  set(serviceInfo: { key: string; value: any }): ContainerInterface;
+  set(serviceInfo: { key: string; }): ContainerInterface;
 }

@@ -19,14 +19,14 @@ describe('BaseContainerModificator', function () {
     const serviceReset = { key: 'item', value: 'Reset' };
     modificator.set(service1);
 
-    expect(mockContainer.services[service1.key]).to.be.eq(service1.value);
+    expect(mockContainer.services[service1.key].value).to.be.eq(service1.value);
     expect(mockContainer.services[service2.key]).to.be.undefined;
 
     modificator.set(service2);
-    expect(mockContainer.services[service2.key]).to.be.eq(service2.value);
+    expect(mockContainer.services[service2.key].value).to.be.eq(service2.value);
 
     modificator.set(serviceReset);
-    expect(mockContainer.services[service1.key]).to.be.eq(serviceReset.value);
+    expect(mockContainer.services[service1.key].value).to.be.eq(serviceReset.value);
   });
 
   it('Check get', function () {

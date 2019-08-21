@@ -1,5 +1,5 @@
 {
-  "name": "modifiable-js-ioc",
+  "name": "js-ioc",
   "version": "0.0.3",
   "description": "Universal IoC module for JavaScript and TypeScript, backend and frontend.",
   "main": "./build/index.js",

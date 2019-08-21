@@ -21,7 +21,6 @@ export interface ContainerModificatorInterface {
    * Put's element into container with some name
    *
    * @param {string} serviceInfo.key Name of element in container
-   * @param {any} serviceInfo.value Value of elements
    */
-  set(serviceInfo: { key: string; value: any }): void;
+  set(serviceInfo: { key: string }): void;
 }
