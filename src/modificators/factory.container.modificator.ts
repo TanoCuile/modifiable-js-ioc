@@ -1,7 +1,7 @@
 import { ContainerModificatorInterface } from '../interfaces/container.modificator.interface';
 import { AbstractContainerModificator } from './abstract.container.modificator';
 
-export class ImportContainerModificator extends AbstractContainerModificator
+export class FactoryContainerModificator extends AbstractContainerModificator
   implements ContainerModificatorInterface {
   /**
    * @inheritdoc
@@ -16,7 +16,7 @@ export class ImportContainerModificator extends AbstractContainerModificator
         this.container.getServices()[key].factory,
         this.container.getServices()[key].args
       );
-      return this.container.getServices()[key];
+      return this.container.getServices()[key].value;
     }
   }
 
